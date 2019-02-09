@@ -1,0 +1,30 @@
+{
+  "name": "apiserver",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "tap test/**/*.test.js",
+    "start": "fastify start -l info app.js",
+    "dev": "fastify start -l info -w -P app.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.18.0",
+    "bookshelf": "^0.14.2",
+    "fastify": "^1.11.0",
+    "fastify-autoload": "^0.6.0",
+    "fastify-cli": "^0.27.0",
+    "fastify-plugin": "^1.2.0",
+    "knex": "^0.13.0",
+    "pg": "^7.8.0"
+  },
+  "devDependencies": {
+    "tap": "^12.0.0"
+  }
+}
